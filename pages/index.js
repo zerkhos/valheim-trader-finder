@@ -15,14 +15,14 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Valheim Traders Finder</title>
+        <title>Valheim Traders Finder (updated)</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Valheim Traders Finder</h1>
+        <h1 className={styles.title}>Valheim Traders Finder (updated)</h1>
         <p className={styles.compat}>
-          ✔ Updated for the latest Valheim releases (tested on 1.0.16) and the new
+          ✔ Updated October 2026: works with the latest Valheim releases (tested on 1.0.16) and the new
           folder-based world saves (<code className={styles.code}>.db2</code>).
           Older <code className={styles.code}>.db</code> worlds are still supported.
         </p>
