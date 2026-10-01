@@ -21,6 +21,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Valheim Traders Finder</h1>
+        <p className={styles.compat}>
+          ✔ Updated for the latest Valheim releases (tested on 1.0.16) and the new
+          folder-based world saves (<code className={styles.code}>.db2</code>).
+          Older <code className={styles.code}>.db</code> worlds are still supported.
+        </p>
 
         <div className={styles.description}>
           <p>
@@ -40,11 +45,14 @@ export default function Home() {
               <li>A spoiler-free map is available if you want to find the best spot where multiple merchants intersect</li>
             </ol>
           <p>
-            Your local worlds can be found in:
+            Your local worlds are folders (one per world) in:
             <br />
             <code className={styles.code}>
-              %userprofile%\AppData\LocalLow\IronGate\Valheim\worlds
+              %userprofile%\AppData\LocalLow\IronGate\Valheim\worlds_local
             </code>
+            <br />
+            Drop the whole world folder, or just its newest <code className={styles.code}>_main.*.db2</code> file.
+            Older worlds saved as a single <code className={styles.code}>.db</code> file still work too.
           </p>
           <p>
             Your cloud saved remote worlds can be found in:
@@ -106,27 +114,23 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://github.com/shudnal/valheim-trader-finder"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Source Code (Github)
-        </a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a
-          href="https://github.com/morinted/valheim-trader-finder"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Original Project (Github)
-        </a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a
-          href="https://jsfiddle.net/b7mjeuan/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Adapted from (JSFiddle)
-        </a>
+        <p>
+          Originally created by{" "}
+          <a href="https://github.com/morinted" target="_blank" rel="noopener noreferrer">
+            morinted
+          </a>{" "}
+          (<a href="https://github.com/morinted/valheim-trader-finder" target="_blank" rel="noopener noreferrer">
+            original project
+          </a>), with Hildir and Bog Witch support by{" "}
+          <a href="https://github.com/shudnal/valheim-trader-finder" target="_blank" rel="noopener noreferrer">
+            shudnal
+          </a>
+          , adapted from{" "}
+          <a href="https://jsfiddle.net/b7mjeuan/" target="_blank" rel="noopener noreferrer">
+            this JSFiddle
+          </a>
+          . Updated for the latest Valheim save format.
+        </p>
       </footer>
     </div>
   );
