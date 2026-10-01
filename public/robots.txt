@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valheim-trader-finder-updated.vercel.app/sitemap.xml

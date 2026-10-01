@@ -17,6 +17,13 @@ export default function Home() {
       <Head>
         <title>Valheim Traders Finder (updated)</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Find Haldor, Hildir and the Bog Witch in your Valheim world without spoilers. Works with the new .db2 world saves (Valheim 1.0.16+). Runs in your browser, nothing is uploaded." />
+        <meta name="google-site-verification" content="1kKK5brgNZXNUwc460AzAysxICcs-9ymWkaVrYY4IeI" />
+        <link rel="canonical" href="https://valheim-trader-finder-updated.vercel.app/" />
+        <meta property="og:title" content="Valheim Traders Finder (updated)" />
+        <meta property="og:description" content="Find Haldor, Hildir and the Bog Witch in your Valheim world. Works with the new .db2 world saves." />
+        <meta property="og:url" content="https://valheim-trader-finder-updated.vercel.app/" />
+        <meta property="og:type" content="website" />
       </Head>
 
       <main className={styles.main}>
